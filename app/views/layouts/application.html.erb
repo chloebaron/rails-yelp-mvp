@@ -13,6 +13,15 @@
   </head>
 
   <body>
+    <div class="navbar-wagon">
+      <%= link_to restaurants_path, class: "navbar-wagon-brand" do %>
+    <% end %>
+    <div class="navbar-wagon-right hidden-xs hidden-sm">
+      <%= link_to "Reviews", "#", class: "navbar-wagon-item navbar-wagon-link" %>
+      <%= link_to "Restaurants", "#", class: "navbar-wagon-item navbar-wagon-link" %>
+      <%= link_to "Map", "#", class: "navbar-wagon-item navbar-wagon-link" %>
+      </div>
+    </div>
     <%= yield %>
   </body>
 </html>
